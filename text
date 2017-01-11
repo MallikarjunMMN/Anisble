@@ -1,0 +1,1 @@
+ansible <hostname/ip/group/pattern> -i <inventorypath> -m <module> -a <aurguments> -u <remoteuser> -b <become>
