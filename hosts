@@ -1,0 +1,16 @@
+[local]
+local ansible_host=52.90.35.43 ansible_user=root ansible_connection=local
+
+[aws_hosts]
+mnode1 ansible_host=54.91.114.20
+mnode2 ansible_host=54.175.194.127
+mnode3 ansible_host=54.234.230.220
+
+[awshosts1]
+mnode4 ansible_host=54.91.114.20
+
+[awshosts2]
+mnode5 ansible_host=54.175.194.127
+
+[awshosts3]
+mnode6 ansible_host=54.234.230.220

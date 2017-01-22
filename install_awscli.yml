@@ -1,0 +1,20 @@
+- name: Installs AWS CLI locally
+  hosts: localhost
+  tasks:
+  - name: Install required packes to install aws-cli locally
+    yum:
+      name: "{{item}}"
+      state: present
+    with_items:
+      - wget
+      - unzip
+
+  - name: Unzip the aws-cli bundle to install
+    unarchive:
+       src: "http://s3.amazonaws.com/aws-cli/awscli-bundle.zip"
+       dest: /home/ec2-user/
+       remote_src: true
+       creates: awscli-bundle
+
+  - name: Install AWS_CLI
+    shell: /home/ec2-user/awscli-bundle/install -b ~/bin/aws

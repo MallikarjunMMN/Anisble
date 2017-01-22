@@ -1,8 +1,0 @@
-   ansible -h | grep -A3 -- "-i"
-   ansible --version
-   cd
-   cp /etc/ansible/ansible.cfg /tmp/
-   export ANSIBLE_CONFIG=/tmp/ansible.cfg
-   cp /etc/ansible/ansible.cfg ~/.ansible.cfg
-   ansible --version
-   rm - rf /tmp/ansible.cfg

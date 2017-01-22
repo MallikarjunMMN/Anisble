@@ -1,0 +1,379 @@
+2017-01-19 07:23:42,910 p=25972 u=ec2-user |  mnode6 | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-19 07:23:43,081 p=25972 u=ec2-user |  MNode1 | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-19 07:23:43,102 p=25972 u=ec2-user |  mnode4 | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-19 07:23:43,156 p=25972 u=ec2-user |  mnode5 | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-19 07:23:43,158 p=25972 u=ec2-user |  MNode2 | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-19 07:23:43,160 p=25972 u=ec2-user |  MNode3 | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-19 07:23:43,225 p=25972 u=ec2-user |  local | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-19 07:25:19,346 p=26054 u=ec2-user |  PLAY [Installs AWS CLI locally] ************************************************
+2017-01-19 07:25:19,387 p=26054 u=ec2-user |  TASK [setup] *******************************************************************
+2017-01-19 07:25:19,829 p=26054 u=ec2-user |  ok: [localhost]
+2017-01-19 07:25:19,831 p=26054 u=ec2-user |  TASK [Install required packes to install aws-cli locally] **********************
+2017-01-19 07:25:20,445 p=26054 u=ec2-user |  ok: [localhost] => (item=[u'wget', u'unzip'])
+2017-01-19 07:25:20,447 p=26054 u=ec2-user |  TASK [Unzip the aws-cli bundle to install] *************************************
+2017-01-19 07:25:21,458 p=26054 u=ec2-user |  changed: [localhost]
+2017-01-19 07:25:21,459 p=26054 u=ec2-user |  TASK [Install AWS_CLI] *********************************************************
+2017-01-19 07:25:24,045 p=26054 u=ec2-user |  fatal: [localhost]: FAILED! => {"changed": true, "cmd": "/home/ec2-user/awscli-bundle/install -b ~/bin/aws", "delta": "0:00:02.376850", "end": "2017-01-19 07:25:24.029009", "failed": true, "rc": 1, "start": "2017-01-19 07:25:21.652159", "stderr": "Traceback (most recent call last):\n  File \"/home/ec2-user/awscli-bundle/install\", line 138, in <module>\n    main()\n  File \"/home/ec2-user/awscli-bundle/install\", line 129, in main\n    pip_install_packages(opts.install_dir)\n  File \"/home/ec2-user/awscli-bundle/install\", line 92, in pip_install_packages\n    assert len(cli_tarball) == 1\nAssertionError", "stdout": "Running cmd: /usr/bin/python virtualenv.py --python /usr/bin/python /home/ec2-user/.local/lib/aws", "stdout_lines": ["Running cmd: /usr/bin/python virtualenv.py --python /usr/bin/python /home/ec2-user/.local/lib/aws"], "warnings": []}
+2017-01-19 07:25:24,047 p=26054 u=ec2-user |  	to retry, use: --limit @/home/ec2-user/myproject/install_awscli.retry
+
+2017-01-19 07:25:24,047 p=26054 u=ec2-user |  PLAY RECAP *********************************************************************
+2017-01-19 07:25:24,047 p=26054 u=ec2-user |  localhost                  : ok=3    changed=1    unreachable=0    failed=1   
+2017-01-19 07:32:44,515 p=26217 u=ec2-user |  PLAY [Installs AWS CLI locally] ************************************************
+2017-01-19 07:32:44,565 p=26217 u=ec2-user |  TASK [setup] *******************************************************************
+2017-01-19 07:32:44,992 p=26217 u=ec2-user |  ok: [localhost]
+2017-01-19 07:32:44,994 p=26217 u=ec2-user |  TASK [Install required packes to install aws-cli locally] **********************
+2017-01-19 07:32:45,628 p=26217 u=ec2-user |  ok: [localhost] => (item=[u'wget', u'unzip'])
+2017-01-19 07:32:45,630 p=26217 u=ec2-user |  TASK [Unzip the aws-cli bundle to install] *************************************
+2017-01-19 07:32:46,597 p=26217 u=ec2-user |  changed: [localhost]
+2017-01-19 07:32:46,599 p=26217 u=ec2-user |  TASK [Install AWS_CLI] *********************************************************
+2017-01-19 07:32:49,041 p=26217 u=ec2-user |  fatal: [localhost]: FAILED! => {"changed": true, "cmd": "/home/ec2-user/awscli-bundle/install -b ~/bin/aws", "delta": "0:00:02.229927", "end": "2017-01-19 07:32:49.025126", "failed": true, "rc": 1, "start": "2017-01-19 07:32:46.795199", "stderr": "Traceback (most recent call last):\n  File \"/home/ec2-user/awscli-bundle/install\", line 138, in <module>\n    main()\n  File \"/home/ec2-user/awscli-bundle/install\", line 129, in main\n    pip_install_packages(opts.install_dir)\n  File \"/home/ec2-user/awscli-bundle/install\", line 92, in pip_install_packages\n    assert len(cli_tarball) == 1\nAssertionError", "stdout": "Running cmd: /usr/bin/python virtualenv.py --python /usr/bin/python /home/ec2-user/.local/lib/aws", "stdout_lines": ["Running cmd: /usr/bin/python virtualenv.py --python /usr/bin/python /home/ec2-user/.local/lib/aws"], "warnings": []}
+2017-01-19 07:32:49,043 p=26217 u=ec2-user |  	to retry, use: --limit @/home/ec2-user/myproject/install_awscli.retry
+
+2017-01-19 07:32:49,043 p=26217 u=ec2-user |  PLAY RECAP *********************************************************************
+2017-01-19 07:32:49,043 p=26217 u=ec2-user |  localhost                  : ok=3    changed=1    unreachable=0    failed=1   
+2017-01-19 08:18:11,286 p=26425 u=ec2-user |  mnode6 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:18:11,517 p=26425 u=ec2-user |  mnode4 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:18:11,521 p=26425 u=ec2-user |  MNode1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:18:11,535 p=26425 u=ec2-user |  mnode5 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:18:11,552 p=26425 u=ec2-user |  MNode3 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:18:11,593 p=26425 u=ec2-user |  MNode2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:18:11,663 p=26425 u=ec2-user |  local | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:18:36,545 p=26508 u=ec2-user |  mnode6 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:18:36,737 p=26508 u=ec2-user |  MNode2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:18:36,739 p=26508 u=ec2-user |  mnode5 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:18:36,743 p=26508 u=ec2-user |  MNode1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:18:36,743 p=26508 u=ec2-user |  mnode4 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:18:36,762 p=26508 u=ec2-user |  MNode3 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:18:36,868 p=26508 u=ec2-user |  local | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:22:46,289 p=26630 u=ec2-user |  mnode6 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:22:46,417 p=26630 u=ec2-user |  MNode2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:22:46,447 p=26630 u=ec2-user |  MNode1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:22:46,514 p=26630 u=ec2-user |  mnode5 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:22:46,529 p=26630 u=ec2-user |  mnode4 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:22:46,561 p=26630 u=ec2-user |  MNode3 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 08:22:46,566 p=26630 u=ec2-user |  local | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-19 09:17:33,981 p=26937 u=ec2-user |  ERROR! the playbook: install_awscli. could not be found
+2017-01-19 09:17:37,999 p=26942 u=ec2-user |  PLAY [Installs AWS CLI locally] ************************************************
+2017-01-19 09:17:38,040 p=26942 u=ec2-user |  TASK [setup] *******************************************************************
+2017-01-19 09:17:38,477 p=26942 u=ec2-user |  ok: [localhost]
+2017-01-19 09:17:38,479 p=26942 u=ec2-user |  TASK [Install required packes to install aws-cli locally] **********************
+2017-01-19 09:17:39,094 p=26942 u=ec2-user |  ok: [localhost] => (item=[u'wget', u'unzip'])
+2017-01-19 09:17:39,096 p=26942 u=ec2-user |  TASK [Unzip the aws-cli bundle to install] *************************************
+2017-01-19 09:17:40,070 p=26942 u=ec2-user |  changed: [localhost]
+2017-01-19 09:17:40,072 p=26942 u=ec2-user |  TASK [Install AWS_CLI] *********************************************************
+2017-01-19 09:17:42,539 p=26942 u=ec2-user |  fatal: [localhost]: FAILED! => {"changed": true, "cmd": "/home/ec2-user/awscli-bundle/install -b ~/bin/aws", "delta": "0:00:02.252836", "end": "2017-01-19 09:17:42.522548", "failed": true, "rc": 1, "start": "2017-01-19 09:17:40.269712", "stderr": "Traceback (most recent call last):\n  File \"/home/ec2-user/awscli-bundle/install\", line 138, in <module>\n    main()\n  File \"/home/ec2-user/awscli-bundle/install\", line 129, in main\n    pip_install_packages(opts.install_dir)\n  File \"/home/ec2-user/awscli-bundle/install\", line 92, in pip_install_packages\n    assert len(cli_tarball) == 1\nAssertionError", "stdout": "Running cmd: /usr/bin/python virtualenv.py --python /usr/bin/python /home/ec2-user/.local/lib/aws", "stdout_lines": ["Running cmd: /usr/bin/python virtualenv.py --python /usr/bin/python /home/ec2-user/.local/lib/aws"], "warnings": []}
+2017-01-19 09:17:42,541 p=26942 u=ec2-user |  	to retry, use: --limit @/home/ec2-user/myproject/install_awscli.retry
+
+2017-01-19 09:17:42,541 p=26942 u=ec2-user |  PLAY RECAP *********************************************************************
+2017-01-19 09:17:42,541 p=26942 u=ec2-user |  localhost                  : ok=3    changed=1    unreachable=0    failed=1   
+2017-01-19 09:27:32,221 p=27107 u=ec2-user |  PLAY [Installs AWS CLI locally] ************************************************
+2017-01-19 09:27:32,262 p=27107 u=ec2-user |  TASK [setup] *******************************************************************
+2017-01-19 09:27:32,702 p=27107 u=ec2-user |  ok: [localhost]
+2017-01-19 09:27:32,705 p=27107 u=ec2-user |  TASK [Install required packes to install aws-cli locally] **********************
+2017-01-19 09:27:33,313 p=27107 u=ec2-user |  ok: [localhost] => (item=[u'wget', u'unzip'])
+2017-01-19 09:27:33,316 p=27107 u=ec2-user |  TASK [Unzip the aws-cli bundle to install] *************************************
+2017-01-19 09:27:34,314 p=27107 u=ec2-user |  changed: [localhost]
+2017-01-19 09:27:34,316 p=27107 u=ec2-user |  TASK [Install AWS_CLI] *********************************************************
+2017-01-19 09:27:36,714 p=27107 u=ec2-user |  fatal: [localhost]: FAILED! => {"changed": true, "cmd": "/home/ec2-user/awscli-bundle/install -b ~/bin/aws", "delta": "0:00:02.186093", "end": "2017-01-19 09:27:36.697395", "failed": true, "rc": 1, "start": "2017-01-19 09:27:34.511302", "stderr": "Traceback (most recent call last):\n  File \"/home/ec2-user/awscli-bundle/install\", line 138, in <module>\n    main()\n  File \"/home/ec2-user/awscli-bundle/install\", line 129, in main\n    pip_install_packages(opts.install_dir)\n  File \"/home/ec2-user/awscli-bundle/install\", line 92, in pip_install_packages\n    assert len(cli_tarball) == 1\nAssertionError", "stdout": "Running cmd: /usr/bin/python virtualenv.py --python /usr/bin/python /home/ec2-user/.local/lib/aws", "stdout_lines": ["Running cmd: /usr/bin/python virtualenv.py --python /usr/bin/python /home/ec2-user/.local/lib/aws"], "warnings": []}
+2017-01-19 09:27:36,715 p=27107 u=ec2-user |  	to retry, use: --limit @/home/ec2-user/myproject/install_awscli.retry
+
+2017-01-19 09:27:36,715 p=27107 u=ec2-user |  PLAY RECAP *********************************************************************
+2017-01-19 09:27:36,716 p=27107 u=ec2-user |  localhost                  : ok=3    changed=1    unreachable=0    failed=1   
+2017-01-19 10:08:18,667 p=27352 u=ec2-user |  ERROR! the playbook: ledgendry-waffle/tasks/simple.yml could not be found
+2017-01-19 10:09:59,127 p=27359 u=ec2-user |  ERROR! the playbook: ledgendry-waffle/tasks/simple.yml could not be found
+2017-01-20 07:31:51,266 p=29992 u=ec2-user |  mnode6 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-20 07:31:51,414 p=29992 u=ec2-user |  MNode1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-20 07:31:51,472 p=29992 u=ec2-user |  mnode4 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-20 07:31:51,513 p=29992 u=ec2-user |  MNode3 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-20 07:31:51,539 p=29992 u=ec2-user |  MNode2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-20 07:31:51,541 p=29992 u=ec2-user |  mnode5 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-20 07:31:51,556 p=29992 u=ec2-user |  local | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-20 07:49:37,432 p=30132 u=ec2-user |  mnode6 | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-20 07:49:37,640 p=30132 u=ec2-user |  mnode4 | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-20 07:49:37,643 p=30132 u=ec2-user |  mnode1 | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-20 07:49:37,646 p=30132 u=ec2-user |  mnode5 | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-20 07:49:37,646 p=30132 u=ec2-user |  mnode2 | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-20 07:49:37,668 p=30132 u=ec2-user |  mnode3 | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-20 07:49:37,779 p=30132 u=ec2-user |  local | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-20 07:49:43,164 p=30214 u=ec2-user |  mnode6 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-20 07:49:43,261 p=30214 u=ec2-user |  mnode1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-20 07:49:43,281 p=30214 u=ec2-user |  mnode5 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-20 07:49:43,322 p=30214 u=ec2-user |  mnode4 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-20 07:49:43,324 p=30214 u=ec2-user |  mnode2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-20 07:49:43,402 p=30214 u=ec2-user |  mnode3 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-20 07:49:43,407 p=30214 u=ec2-user |  local | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-20 08:42:03,950 p=30532 u=ec2-user |  PLAY [mnode1] ******************************************************************
+2017-01-20 08:42:03,992 p=30532 u=ec2-user |  TASK [setup] *******************************************************************
+2017-01-20 08:42:04,817 p=30532 u=ec2-user |  ok: [mnode1]
+2017-01-20 08:42:04,820 p=30532 u=ec2-user |  TASK [Install Tree package] ****************************************************
+2017-01-20 08:42:14,092 p=30532 u=ec2-user |  changed: [mnode1]
+2017-01-20 08:42:14,094 p=30532 u=ec2-user |  PLAY RECAP *********************************************************************
+2017-01-20 08:42:14,094 p=30532 u=ec2-user |  mnode1                     : ok=2    changed=1    unreachable=0    failed=0   
+2017-01-20 08:53:03,362 p=30621 u=ec2-user |  PLAY [mnode1] ******************************************************************
+2017-01-20 08:53:03,403 p=30621 u=ec2-user |  TASK [setup] *******************************************************************
+2017-01-20 08:53:04,209 p=30621 u=ec2-user |  ok: [mnode1]
+2017-01-20 08:53:04,211 p=30621 u=ec2-user |  TASK [Install Tree package] ****************************************************
+2017-01-20 08:53:04,860 p=30621 u=ec2-user |  ok: [mnode1]
+2017-01-20 08:53:04,861 p=30621 u=ec2-user |  PLAY RECAP *********************************************************************
+2017-01-20 08:53:04,861 p=30621 u=ec2-user |  mnode1                     : ok=2    changed=0    unreachable=0    failed=0   
+2017-01-20 08:54:42,100 p=30667 u=ec2-user |  PLAY [mnode1] ******************************************************************
+2017-01-20 08:54:42,139 p=30667 u=ec2-user |  TASK [setup] *******************************************************************
+2017-01-20 08:54:42,898 p=30667 u=ec2-user |  ok: [mnode1]
+2017-01-20 08:54:42,900 p=30667 u=ec2-user |  TASK [Install Tree package] ****************************************************
+2017-01-20 08:54:43,530 p=30667 u=ec2-user |  ok: [mnode1]
+2017-01-20 08:54:43,532 p=30667 u=ec2-user |  PLAY RECAP *********************************************************************
+2017-01-20 08:54:43,532 p=30667 u=ec2-user |  mnode1                     : ok=2    changed=0    unreachable=0    failed=0   
+2017-01-20 08:59:55,695 p=30716 u=ec2-user |  PLAY RECAP *********************************************************************
+2017-01-20 09:01:26,260 p=30740 u=ec2-user |  PLAY [mnode1] ******************************************************************
+2017-01-20 09:01:26,300 p=30740 u=ec2-user |  TASK [setup] *******************************************************************
+2017-01-20 09:01:27,093 p=30740 u=ec2-user |  ok: [mnode1]
+2017-01-20 09:01:27,095 p=30740 u=ec2-user |  TASK [Install telnet] **********************************************************
+2017-01-20 09:01:29,518 p=30740 u=ec2-user |  changed: [mnode1]
+2017-01-20 09:01:29,520 p=30740 u=ec2-user |  TASK [Ping the machine] ********************************************************
+2017-01-20 09:01:29,860 p=30740 u=ec2-user |  ok: [mnode1]
+2017-01-20 09:01:29,862 p=30740 u=ec2-user |  PLAY RECAP *********************************************************************
+2017-01-20 09:01:29,862 p=30740 u=ec2-user |  mnode1                     : ok=3    changed=1    unreachable=0    failed=0   
+2017-01-20 09:02:29,356 p=30776 u=ec2-user |  Using /home/ec2-user/myproject/ansible.cfg as config file
+2017-01-20 09:02:29,454 p=30776 u=ec2-user |  PLAYBOOK: become-pertask.yml ***************************************************
+2017-01-20 09:02:29,455 p=30776 u=ec2-user |  1 plays in legendary-waffle/playbooks/become-pertask.yml
+2017-01-20 09:02:29,457 p=30776 u=ec2-user |  PLAY [mnode1] ******************************************************************
+2017-01-20 09:02:29,498 p=30776 u=ec2-user |  TASK [setup] *******************************************************************
+2017-01-20 09:02:29,723 p=30776 u=ec2-user |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/system/setup.py
+2017-01-20 09:02:30,296 p=30776 u=ec2-user |  ok: [mnode1]
+2017-01-20 09:02:30,298 p=30776 u=ec2-user |  TASK [Install telnet] **********************************************************
+2017-01-20 09:02:30,299 p=30776 u=ec2-user |  task path: /home/ec2-user/myproject/legendary-waffle/playbooks/become-pertask.yml:4
+2017-01-20 09:02:30,458 p=30776 u=ec2-user |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/packaging/os/yum.py
+2017-01-20 09:02:30,931 p=30776 u=ec2-user |  ok: [mnode1] => {
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "conf_file": null, 
+            "disable_gpg_check": false, 
+            "disablerepo": null, 
+            "enablerepo": null, 
+            "exclude": null, 
+            "install_repoquery": true, 
+            "list": null, 
+            "name": [
+                "telnet"
+            ], 
+            "state": "present", 
+            "update_cache": false, 
+            "validate_certs": true
+        }, 
+        "module_name": "yum"
+    }, 
+    "msg": "", 
+    "rc": 0, 
+    "results": [
+        "telnet-1:0.17-60.el7.x86_64 providing telnet is already installed"
+    ]
+}
+2017-01-20 09:02:30,933 p=30776 u=ec2-user |  TASK [Ping the machine] ********************************************************
+2017-01-20 09:02:30,933 p=30776 u=ec2-user |  task path: /home/ec2-user/myproject/legendary-waffle/playbooks/become-pertask.yml:11
+2017-01-20 09:02:31,058 p=30776 u=ec2-user |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/system/ping.py
+2017-01-20 09:02:31,268 p=30776 u=ec2-user |  ok: [mnode1] => {
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "data": null
+        }, 
+        "module_name": "ping"
+    }, 
+    "ping": "pong"
+}
+2017-01-20 09:02:31,270 p=30776 u=ec2-user |  PLAY RECAP *********************************************************************
+2017-01-20 09:02:31,270 p=30776 u=ec2-user |  mnode1                     : ok=3    changed=0    unreachable=0    failed=0   
+2017-01-22 01:24:14,573 p=2468 u=ec2-user |  mnode6 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-22 01:24:14,665 p=2468 u=ec2-user |  mnode1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-22 01:24:14,722 p=2468 u=ec2-user |  mnode2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-22 01:24:14,763 p=2468 u=ec2-user |  mnode4 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-22 01:24:14,788 p=2468 u=ec2-user |  mnode5 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-22 01:24:14,814 p=2468 u=ec2-user |  mnode3 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-22 01:24:14,818 p=2468 u=ec2-user |  local | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-22 01:24:24,549 p=2550 u=ec2-user |  mnode6 | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-22 01:24:24,603 p=2550 u=ec2-user |  mnode1 | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-22 01:24:24,707 p=2550 u=ec2-user |  mnode4 | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-22 01:24:24,730 p=2550 u=ec2-user |  mnode2 | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-22 01:24:24,733 p=2550 u=ec2-user |  mnode5 | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-22 01:24:24,782 p=2550 u=ec2-user |  local | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-22 01:24:24,874 p=2550 u=ec2-user |  mnode3 | SUCCESS => {"changed": false, "ping": "pong"}
+2017-01-22 01:25:31,210 p=2623 u=ec2-user |  ERROR! No argument passed to command module
+2017-01-22 01:25:44,436 p=2633 u=ec2-user |  ERROR! Extranous options or arguments
+2017-01-22 01:26:17,604 p=2638 u=ec2-user |  mnode6 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-22 01:26:17,706 p=2638 u=ec2-user |  mnode4 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-22 01:26:17,741 p=2638 u=ec2-user |  mnode2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-22 01:26:17,806 p=2638 u=ec2-user |  mnode1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-22 01:26:17,831 p=2638 u=ec2-user |  mnode5 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-22 01:26:17,868 p=2638 u=ec2-user |  local | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-22 01:26:17,891 p=2638 u=ec2-user |  mnode3 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-01-22 01:34:24,888 p=2737 u=ec2-user |  PLAY [mnode4] ******************************************************************
+2017-01-22 01:34:24,928 p=2737 u=ec2-user |  TASK [Install HTTPD] ***********************************************************
+2017-01-22 01:34:37,160 p=2737 u=ec2-user |  changed: [mnode4]
+2017-01-22 01:34:37,161 p=2737 u=ec2-user |  TASK [Start and Enable HTTPD] **************************************************
+2017-01-22 01:34:38,081 p=2737 u=ec2-user |  changed: [mnode4]
+2017-01-22 01:34:38,085 p=2737 u=ec2-user |  PLAY [mnode3] ******************************************************************
+2017-01-22 01:34:38,088 p=2737 u=ec2-user |  TASK [Install SSH] *************************************************************
+2017-01-22 01:34:49,208 p=2737 u=ec2-user |  changed: [mnode3]
+2017-01-22 01:34:49,209 p=2737 u=ec2-user |  TASK [Start and Enable the SSHD Service] ***************************************
+2017-01-22 01:34:49,730 p=2737 u=ec2-user |  ok: [mnode3]
+2017-01-22 01:34:49,731 p=2737 u=ec2-user |  PLAY RECAP *********************************************************************
+2017-01-22 01:34:49,731 p=2737 u=ec2-user |  mnode3                     : ok=2    changed=1    unreachable=0    failed=0   
+2017-01-22 01:34:49,732 p=2737 u=ec2-user |  mnode4                     : ok=2    changed=2    unreachable=0    failed=0   
+2017-01-22 01:35:20,446 p=2797 u=ec2-user |  playbook: legendary-waffle/playbooks/twoplay.yml
+2017-01-22 01:35:20,446 p=2797 u=ec2-user |    play #1 (mnode4): mnode4	TAGS: []
+    pattern: [u'mnode4']
+    hosts (1):
+      mnode4
+2017-01-22 01:35:20,446 p=2797 u=ec2-user |    play #2 (mnode3): mnode3	TAGS: []
+    pattern: [u'mnode3']
+    hosts (1):
+      mnode3
+2017-01-22 01:36:30,776 p=2804 u=ec2-user |  playbook: legendary-waffle/playbooks/twoplay.yml
